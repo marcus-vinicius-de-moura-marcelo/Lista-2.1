@@ -1,0 +1,79 @@
+Questão 1
+FIXANDO A PARTE QUE FIZ, JÁ QUE NÃO CONSEGUI IMPRIMIR AS DUAS MAIORES NOTAS, E FALTOU TERMINAR A CORREÇÃO NA AULA.
+
+/* Escreva um programa que:
+* leia 100 fichas, onde cada ficha contém o número de matrícula e a nota de cada aluno de
+um determinado curso;
+* determine e imprima as duas maiores notas, juntamente com o número de matrícula do
+aluno que obteve cada uma delas;
+* assuma que não exista dois ou mais alunos com a mesma nota;
+*/
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    String aluno;
+    Double matricula =1.0;
+    Double nota =0.0;
+    Double maiorNota = 0.0;
+    Double maiorMatricula;
+    
+    Scanner entrada = new Scanner(System.in);
+    for(int i=1; i<=3; i++){
+      System.out.println("Primeiro nome: ");
+      aluno=entrada.next();
+      System.out.println("Número matrícula: ");
+      matricula=entrada.nextDouble();
+      System.out.println("Nota (de 1 a 10): ");
+      nota=entrada.nextDouble();    
+      if(nota>maiorNota){
+        maiorNota = nota;
+        maiorMatricula = matricula;
+    }
+    
+    } 
+   System.out.println("A maior nota foi "+ nota + " da matrícula "+ matricula);
+  }
+}
+
+
+
+Questão 2
+
+/* Dada a seguinte série: 1, 4, 4, 2, 5, 5, 3, 6, 6, 4, 7, 7, . . ., escreva um programa que seja capaz de
+gerar os primeiros n−ésimos termos da mesma. Esse número n deve ser lido do teclado. No
+exemplo citado, n = 4
+*/
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    
+    Integer n;
+    Integer par;
+    Integer impar;
+    
+    Scanner entrada  = new Scanner(System.in);
+    System.out.println("Qual quantidade de termos terá a série?");
+    n = entrada.nextInt();
+    par = 2;
+    impar =1;
+    
+    for (int i=1; i<=n; i++){
+      if (i%2==0){
+        System.out.println(par + " " + par++);
+      } else{
+        System.out.println(impar + " "+ impar + " "+ impar++);
+      }
+      
+      
+    }
+    
+    
+  }
+}
+
+
+Questão 3
+NÃO CONSEGUI REALIZAR, TIVE DIFICULDADES.
